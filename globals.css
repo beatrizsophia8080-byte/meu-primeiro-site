@@ -1,0 +1,110 @@
+:root {
+  /* CORES: altere aqui para personalizar o site */
+  --cor-fundo: #f5f7fb;
+  --cor-card: #ffffff;
+  --cor-texto: #1f2937;
+  --cor-texto-secundario: #6b7280;
+  --cor-principal: #2563eb;
+  --cor-principal-hover: #1d4ed8;
+  --cor-borda: #d1d5db;
+  --cor-resposta: #f9fafb;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--cor-fundo);
+  color: var(--cor-texto);
+}
+
+button,
+textarea {
+  font: inherit;
+}
+
+.pagina {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 16px;
+}
+
+.card {
+  width: 100%;
+  max-width: 720px;
+  background: var(--cor-card);
+  border: 1px solid var(--cor-borda);
+  border-radius: 16px;
+  padding: 32px;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(2.2rem, 6vw, 4rem);
+  line-height: 1.05;
+}
+
+.descricao {
+  margin: 16px 0 24px;
+  color: var(--cor-texto-secundario);
+  font-size: 1.1rem;
+}
+
+.campoTexto {
+  width: 100%;
+  resize: vertical;
+  min-height: 150px;
+  padding: 16px;
+  border: 1px solid var(--cor-borda);
+  border-radius: 10px;
+  outline: none;
+}
+
+.campoTexto:focus {
+  border-color: var(--cor-principal);
+}
+
+.botao {
+  margin-top: 16px;
+  border: 0;
+  border-radius: 10px;
+  padding: 12px 22px;
+  background: var(--cor-principal);
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.botao:hover {
+  background: var(--cor-principal-hover);
+}
+
+.resposta {
+  min-height: 120px;
+  margin-top: 24px;
+  padding: 18px;
+  border: 1px solid var(--cor-borda);
+  border-radius: 10px;
+  background: var(--cor-resposta);
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+.resposta h2 {
+  margin: 0 0 12px;
+  font-size: 1rem;
+}
+
+.resposta p {
+  margin: 0;
+}
